@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date of Element</title>
+</head>
+<body>
+    <h1>What is the time right now in Pakistan!</h1>
+    <h2>Current time right now in Lahore.</h2>
+    <p>This is according to pakistan time zone </p>
+    <p class="time"> </p>
+
+
+    <script>
+        // First of all store time in a variable and then replace it with html like .time 
+        const td = new Date();
+        document.querySelector('.time').innerHTML = td;
+
+        //date functions in javascript
+        console.log(td.getDate());
+        console.log(td.toDateString());
+        console.log(td.toJSON);
+        console.log(td.toLocaleDateString('en-US', { timeZone: 'Asia/Karachi' }));
+        console.log(td.toTimeString());
+    </script>
+</body>
+</html>
