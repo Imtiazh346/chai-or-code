@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  button, a {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+    button:hover, a:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+  
+  button{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  ul { list-style: none; }
+  a { text-decoration: none; }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #635888;
+}
