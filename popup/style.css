@@ -1,44 +1,89 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: 20px;
-    color: #333;
-    line-height: 1.5;
-  }
-  
-  button, a {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  
-  button{
-    background-color: aliceblue;
-    padding: 10px 20px;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 2px;
-  }
-
-  button:hover {
-    color: #000000;
-    border: 1px solid black;
-    transition: border 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-  ul { list-style: none; }
-  a { text-decoration: none; }
+
+body {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #635888;
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #635888;
+}
+
+.popup {
+  width: 400px;
+  position: absolute;
+  background-color: white;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0px 30px 30px;
+  visibility: hidden;
+  transition: .4s ease-in;
+}
+
+.open-popup{
+  top:50%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50%;
+  box-sizing: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.popup h2 {
+  font-size: 38px;
+  color: #211212;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  background-color: #6fd949;
+  color: #fff;
+  margin: 20px 0 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  outline: none;
+  border: unset;
+
+}
+
+#submit-btn{
+  background-color: #020302;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px 0 10px;
+  padding: 10px 30px;
+  font-size: 15px;
+  outline: none;
+  border: unset;
 }

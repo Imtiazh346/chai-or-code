@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<main>
-    <div class="container">
-        <button onclick="openPopup()">Submit</button>
-        <div class="popup">
-                                      
+    <div class="container popup-content">
+        <button onclick="openPopup()" id="submit-btn">Submit</button>
+        <div class="popup" id="popup">
+         <img src="./404-tick.png" alt="Tick Image">     
+         <h2>Thank You!</h2>   
+         <p>Your details has been successfully submitted. Thanks!</p>  
+         <button id="closebtn" onclick="closePopup()" class="closepPopup">Ok</button>                   
         </div>
-    </div>
-</main>
-    
+    </div>  
+    <script src="./script.js"></script>
 </body>
 </html>
